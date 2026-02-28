@@ -158,7 +158,7 @@ Expected outputs (as defined in `pipeline.sh`):
 
 Your repository already contains an example final output: `patient_final_filtered.vcf`.
 
-## 8) Main results
+## 8) Results
 
 All three input variants were annotated as Pathogenic by ClinVar and retained after filtering:
 
@@ -176,7 +176,7 @@ Note on IDs: the raw VCF uses rsIDs, while the ClinVar-annotated output uses Cli
 * AlphaMissense and REVEL are computational predictors; they support (but do not replace) clinical classification.
 * ACMG/AMP classification in this project is documented manually in the Excel report based on reviewed evidence; it is not an automated ACMG engine.
 
-## 10) Citation / data source acknowledgment
+## 10) Data source acknowledgment
 
 Primary resources used:
 
