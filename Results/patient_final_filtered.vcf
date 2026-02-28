@@ -1,0 +1,19 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##contig=<ID=chr7,length=159345973>
+##contig=<ID=chr12,length=133275309>
+##contig=<ID=chr19,length=58617616>
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##contig=<ID=19>
+##contig=<ID=7>
+##contig=<ID=12>
+##INFO=<ID=CLNSIG,Number=.,Type=String,Description="Aggregate germline classification for this single variant; multiple values are separated by a vertical bar">
+##INFO=<ID=CLNDN,Number=.,Type=String,Description="ClinVar's preferred disease name for the concept specified by disease identifiers in CLNDISDB">
+##bcftools_annotateVersion=1.19+htslib-1.19
+##bcftools_annotateCommand=annotate -a clinvar.vcf.gz -c INFO/CLNSIG,INFO/CLNDN,ID -o patient_annotated.vcf pateint_variants.vcf.gz; Date=Fri Feb 27 20:46:48 2026
+##bcftools_viewVersion=1.19+htslib-1.19
+##bcftools_viewCommand=view -r 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 -o patient_final_filtered.vcf patient_annotated.vcf.gz; Date=Fri Feb 27 20:49:11 2026
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	PATIENT_001
+7	117587806	7120	G	A	.	PASS	CLNSIG=Pathogenic;CLNDN=CFTR-related_disorder|Cystic_fibrosis|Congenital_bilateral_aplasia_of_vas_deferens_from_CFTR_mutation|not_provided|Hereditary_pancreatitis|Bronchiectasis_with_or_without_elevated_sweat_chloride_1|ivacaftor_response_-_Efficacy	GT	0/1
+12	102840493	577	G	A	.	PASS	CLNSIG=Pathogenic;CLNDN=PAH-related_disorder|Inborn_genetic_diseases|not_provided|Phenylketonuria|See_cases	GT	0/1
+19	11105587	3690	C	G	.	PASS	CLNSIG=Pathogenic;CLNDN=Dyslipidemia|Cardiovascular_phenotype|Familial_hypercholesterolemia|not_provided|Hypercholesterolemia,_familial,_1	GT	0/1
